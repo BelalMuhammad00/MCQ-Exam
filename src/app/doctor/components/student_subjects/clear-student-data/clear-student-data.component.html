@@ -1,0 +1,8 @@
+<h1 mat-dialog-title> مسح البيانات</h1>
+<div mat-dialog-content>
+  هل انت متأكد من مسح جميع البيانات ؟
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>لا</button>
+  <button (click)="clearAllStudentData()" mat-button mat-dialog-close cdkFocusInitial mat-raised-button color="warn">نعم</button>
+</div>

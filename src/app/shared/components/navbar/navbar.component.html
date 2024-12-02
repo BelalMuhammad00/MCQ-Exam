@@ -1,0 +1,57 @@
+
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-warn ">
+    <div class="container ">
+     
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center">
+      
+      
+          <li class="nav-item " *ngIf="user !== null" >
+            <a class="nav-link text-white fs-3 shadow-lg rounded-circle p-3 me-lg-3" >{{user?.userName}}</a>
+          </li>
+
+          <li class="nav-item " *ngIf="user?.role == 'doctor' " routerLinkActive="active">
+            <a class="nav-link  px-3 text-white" routerLink="/new-exam" routerLinkActive="active">أختبار جديد</a>
+          </li>
+
+          <li class="nav-item" *ngIf="user?.role == 'doctor' " routerLinkActive="active">
+            <a class="nav-link px-3  text-white" routerLink="/students" routerLinkActive="active">الطلاب</a>
+          </li>
+
+          <li class="nav-item" *ngIf="user !== null" routerLinkActive="active">
+            <a class="nav-link px-3   text-white" routerLink="/subjects">المواد</a>
+          </li>
+
+          <li class="nav-item" *ngIf="user !== null" routerLinkActive="active" (click)="logOut()">
+            <a class="nav-link px-3  text-white" routerLink="/login">خروج</a>
+          </li>
+
+          <li class="nav-item" *ngIf="user == null" routerLinkActive="active">
+            <a class="nav-link px-3    text-white" routerLink="/login">دخول</a>
+          </li>
+
+          <li class="nav-item" *ngIf="user == null" routerLinkActive="active">
+            <a class="nav-link px-3   text-white" routerLink="/register">تسجيل</a>
+          </li>
+
+       
+
+       
+        </ul>
+     
+
+        <div class="navbar-brand d-lg-inline  d-none" >
+          <a class="navbar-brand "  routerLinkActive="active" routerLink="welcome">فاينال <img src="../../../assets/images/school_white_24dp.svg" alt=""> </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+
+

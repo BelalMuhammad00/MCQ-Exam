@@ -1,0 +1,83 @@
+{
+  "students": [
+    {
+      "userName": "test",
+      "email": "belal123@gmail.com",
+      "password": "123",
+      "subjects": [
+        {
+          "name": "math",
+          "id": "c4d5",
+          "degree": 0
+        }
+      ],
+      "id": "1"
+    },
+    {
+      "userName": "ahmed",
+      "email": "ahmed@gmail.com",
+      "password": "123",
+      "subjects": [],
+      "id": "8cb2"
+    }
+  ],
+  "doctor": [
+    {
+      "id": "1",
+      "userName": "admin",
+      "email": "admin@gmail.com",
+      "password": "123"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "c4d5",
+      "name": "math",
+      "questions": [
+        {
+          "question": "1+1",
+          "answer1": "1",
+          "answer2": "2",
+          "answer3": "3",
+          "answer4": "4",
+          "correctAnswer": "2"
+        },
+        {
+          "question": "3+3",
+          "answer1": "1",
+          "answer2": "4",
+          "answer3": "2",
+          "answer4": "6",
+          "correctAnswer": "6"
+        }
+      ]
+    },
+    {
+      "id": "be69",
+      "name": "لغة عربية",
+      "questions": [
+        {
+          "question": "اول حرف في الترتيب الابجدي",
+          "answer1": "ا",
+          "answer2": "ب",
+          "answer3": "ت",
+          "answer4": "ث",
+          "correctAnswer": "ا"
+        },
+        {
+          "question": "تاني حرف ",
+          "answer1": "ا",
+          "answer2": "ب",
+          "answer3": "ت",
+          "answer4": "ث",
+          "correctAnswer": "ب"
+        }
+      ]
+    }
+  ],
+  "login": [
+    {
+      "id": "1"
+    }
+  ]
+}
